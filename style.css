@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #212529;
+}
+
+/* Navbar */
+header {
+  padding: 1rem 5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #212529;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #faa307;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+header .logo-icon {
+  height: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  /* background-color: white; */
+}
+
+nav .fa-bars {
+  font-size: 1.3rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1.4rem;
+  right: 1rem;
+  display: none;
+  color: #fff;
+}
+
+/* Navbar Mobile Media Query */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  nav .nav-links {
+    /* display: none; */
+  }
+
+  nav .fa-bars {
+    display: inline-block;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .nav-links {
+    right: -100%;
+    top: 3.8rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: 0.5s;
+    position: fixed;
+    background-color: #212529;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.15); */
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  header.active {
+    transition: 0.5s;
+  }
+
+  nav .nav-links.active {
+    /* display: flex; */
+    right: 0;
+  }
+}
+
+/* Hero */
+main {
+  width: 100%;
+  background-color: #212529;
+  color: #fff;
+  padding-top: 3rem;
+}
