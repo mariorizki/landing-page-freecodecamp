@@ -215,8 +215,23 @@ form {
   background-color: #212529;
 }
 
-.title-section {
+.services-section .title-section {
   /* text-align: center; */
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.services-section .title-section::before {
+  content: ' ';
+  position: absolute;
+  background: #faa307;
+  width: 7rem;
+  height: 0.5rem;
+  bottom: 10px;
+  margin-left: -0.5em;
+  z-index: -1;
+  border-radius: 1em 2em;
 }
 
 .services-container {
@@ -282,5 +297,20 @@ form {
   }
   .hero .soc-icons {
     top: 50%;
+  }
+
+  .services-section .title-section {
+    font-size: 3rem;
+  }
+
+  .services-section .title-section::before {
+    width: 10rem;
+    height: 0.8rem;
+    bottom: 15px;
+  }
+
+  #video {
+    width: 560px;
+    height: 315px;
   }
 }
