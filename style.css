@@ -207,6 +207,10 @@ form {
   right: 2rem;
 }
 
+.hero .soc-icons .icon {
+  margin-top: 0.5rem;
+}
+
 /* Services Section */
 .services-section {
   display: flex;
