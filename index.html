@@ -16,22 +16,87 @@
     />
   </head>
   <body>
+    <!-- Navbar -->
     <header id="header">
-      <nav>
-        <a href="#" class="logo"> Hamburglar</a>
+      <nav id="nav-bar">
+        <div class="logo-container">
+          <a href="#hero">
+            <img src="./images/burger.svg" alt="" id="header-img" />
+          </a>
+          <a href="#hero" class="logo nav-link">Hamburglar</a>
+        </div>
         <div class="nav-links" id="navLinks">
-          <a href="#" class="nav-link">Home</a>
-          <a href="#" class="nav-link">Services</a>
-          <a href="#" class="nav-link">Menu</a>
-          <a href="#" class="nav-link">Contact</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#app" class="nav-link">Download App</a>
         </div>
         <i id="toggle" class="fas fa-bars"></i>
       </nav>
     </header>
+    <!--  -->
+
     <main>
-      <section class="hero">
-        <h1>Hello</h1>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="left-col">
+          <h1 id="title">
+            This is not just a hamburger<br />It's <span>Hamburglar</span>
+          </h1>
+          <p id="description">
+            Put your email below to get special discount and offers from us
+          </p>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email.."
+              name="email"
+            />
+            <input type="submit" id="submit" />
+          </form>
+        </div>
+        <div class="right-col">
+          <img class="burger-img" src="./images/whooper.png" alt="" />
+          <div class="soc-icons">
+            <i class="fab fa-twitter icon"></i>
+            <i class="fab fa-facebook-f icon"></i>
+            <i class="fab fa-instagram icon"></i>
+          </div>
+        </div>
       </section>
+      <!--  -->
+
+      <!-- Services Section -->
+      <section id="services" class="services-section">
+        <h1 class="title-section">Services</h1>
+        <div class="services-container">
+          <div class="service">
+            <img class="service-icon" src="./images/quality.svg" alt="" />
+            <p>High Quality Burger</p>
+          </div>
+          <div class="service">
+            <img class="service-icon" src="./images/fast-dlivery.svg" alt="" />
+            <p>Fast Delivery</p>
+          </div>
+          <div class="service">
+            <img class="service-icon" src="./images/discount.svg" alt="" />
+            <p>Best Price</p>
+          </div>
+        </div>
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/dA0VGEbbw4g"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <!--  -->
+      <section id="menu"></section>
+      <section id="app"></section>
     </main>
 
     <script src="script.js"></script>
