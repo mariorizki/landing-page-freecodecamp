@@ -154,6 +154,7 @@ span {
 
 form {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -162,7 +163,7 @@ form {
   padding: 0.6rem;
   border-radius: 0.5rem;
   border: 1px solid #707070;
-  width: 100%;
+  /* width: 100%; */
   /* border: none; */
 }
 
@@ -176,7 +177,7 @@ form {
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
-  width: 100%;
+  /* width: 100%; */
 }
 
 #submit:hover {
@@ -295,10 +296,20 @@ form {
     font-size: 3.5rem;
   }
 
+  #form {
+    flex-direction: row;
+  }
+
+  #email,
+  #submit {
+    margin-top: 0.5rem;
+  }
+
   .hero .right-col .burger-img {
     width: 550px;
     margin-left: 9rem;
   }
+
   .hero .soc-icons {
     top: 50%;
   }
