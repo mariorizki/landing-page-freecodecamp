@@ -126,6 +126,7 @@ main {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .hero .left-col {
@@ -151,10 +152,17 @@ span {
   margin: 2rem 0 1rem;
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 #email {
   padding: 0.6rem;
   border-radius: 0.5rem;
   border: 1px solid #707070;
+  width: 100%;
   /* border: none; */
 }
 
@@ -168,6 +176,7 @@ span {
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
+  width: 100%;
 }
 
 #submit:hover {
@@ -177,8 +186,6 @@ span {
 }
 
 .hero .right-col {
-  position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,16 +195,16 @@ span {
   width: 300px;
 }
 
-.hero .right-col .soc-icons {
+.hero .soc-icons {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
+  flex-direction: column;
   gap: 1.6rem;
   font-size: 16px;
   position: absolute;
-  top: 50%;
-  right: -9rem;
+  top: 75%;
+  right: 2rem;
 }
 
 /* Services Section */
@@ -229,6 +236,7 @@ span {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: 2rem;
   width: 250px;
+  margin-top: 1rem;
 }
 
 .service-icon {
@@ -254,14 +262,25 @@ span {
     padding-left: 5rem;
   }
 
+  #title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
   #description {
-    margin: 2rem 0 3rem;
+    margin: 2rem 0 1rem;
+    font-size: 1.1rem;
+  }
+
+  span {
+    font-size: 3.5rem;
   }
 
   .hero .right-col .burger-img {
     width: 550px;
+    margin-left: 9rem;
   }
-  .hero .right-col .soc-icons {
-    right: 0;
+  .hero .soc-icons {
+    top: 50%;
   }
 }
