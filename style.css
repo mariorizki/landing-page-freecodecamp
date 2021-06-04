@@ -347,15 +347,21 @@ form {
 .app-content p {
   font-size: 0.9rem;
   font-weight: 200;
+  text-align: center;
 }
 
 .app {
-  margin: auto;
+  /* margin: auto; */
   text-align: center;
 }
 
 .app-img {
   width: 280px;
+}
+
+.store-icons {
+  margin: auto;
+  text-align: center;
 }
 
 .store-icon {
