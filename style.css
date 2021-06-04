@@ -156,7 +156,7 @@ form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 #email {
@@ -220,18 +220,18 @@ form {
   background-color: #212529;
 }
 
-.services-section .title-section {
+.title-section {
   /* text-align: center; */
   font-size: 2rem;
   position: relative;
   z-index: 1;
 }
 
-.services-section .title-section::before {
+.title-section::before {
   content: ' ';
   position: absolute;
   background: #faa307;
-  width: 7rem;
+  width: 50%;
   height: 0.5rem;
   bottom: 10px;
   margin-left: -0.5em;
@@ -302,7 +302,7 @@ form {
 
   #email,
   #submit {
-    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .hero .right-col .burger-img {
